@@ -6,9 +6,10 @@
 
 #### 커맨드라인에서 조회하는 방법
 ```shell
-java -jar jennifer-jdbc-{version}.jar -u jdbc:jennifer:{host}:{port}:[dbName]
+java -jar jennifer-jdbc-{version}.jar -u jdbc:jennifer:{host}:{port};[dbName=default;dbType=data]
 ```
 * version - 드라이버 버전
 * host - API 서버의 주소 or 아이피
 * port - API 서버의 포트
-* dbName - API 서버 설정에 입력한 디비의 이름 (optional)
+* dbName - API 서버 설정에 입력한 디비의 이름 (optional) - 기본: default
+* dbType - API 서버 설정에 입력한 디비의 타입 (optional) - 기본: data (view or data)
